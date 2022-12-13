@@ -57,7 +57,7 @@ createApp({
     },
     
     created(){
-        const timer = setInterval(this.nextBtn(), 1000);
+        const timer = setInterval(this.nextBtn, 3000);
     }
 
 

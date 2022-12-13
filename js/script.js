@@ -51,6 +51,17 @@ createApp({
                 this.counter = 0;
             }
             console.log(this.counter)
+        },
+        
+        autoScroll(){
+            setInterval(function () {this.counter++}, 100);
         }
+    },
+
+    created(){
+        this.autoScroll();
     }
+
+
+
 }).mount ('#app')

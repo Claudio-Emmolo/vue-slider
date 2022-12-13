@@ -60,6 +60,21 @@ createApp({
 	},
 
     methods: {
+        previusBtn(){
+            this.counter = this.counter - 1;
+            if (this.counter < 0){
+                this.counter = this.imageList.length - 1;
+            }
+            console.log(this.counter)
 
+        },
+
+        nextBtn(){
+            this.counter++;
+            if (this.counter >= 5){
+                this.counter = 0;
+            }
+            console.log(this.counter)
+        }
     }
 }).mount ('#app')

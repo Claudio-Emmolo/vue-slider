@@ -53,13 +53,11 @@ createApp({
             console.log(this.counter)
         },
         
-        autoScroll(){
-            const timer = setInterval(function () {this.counter++}, 100);
-        }
-    },
 
+    },
+    
     created(){
-        this.autoScroll();
+        const timer = setInterval(this.nextBtn(), 1000);
     }
 
 

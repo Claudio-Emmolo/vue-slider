@@ -54,7 +54,7 @@ createApp({
         },
         
         autoScroll(){
-            setInterval(function () {this.counter++}, 100);
+            const timer = setInterval(function () {this.counter++}, 100);
         }
     },
 
